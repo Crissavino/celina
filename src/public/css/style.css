@@ -1,0 +1,179 @@
+.flechaVolver {
+    position: fixed;
+    padding: 10px 15px;
+    z-index: 900;
+    background-color: white;
+    color: #666;
+    bottom: 10px;
+    border: solid 0.5px #909090;
+    right: 10px;
+}
+
+.flechaVolver:hover{
+    background-color: white;
+}
+
+.mapa {
+    text-align: center;
+}
+
+/* css boton programar llamada de zolus */
+.peeking-form-w {
+    position:fixed;
+    right:0px;
+    top:50%;
+    /* height: 100%; */
+    margin-top: 2px;
+    margin-bottom: 20px;
+    -webkit-transform:translate(100%,-50%);
+    -moz-transform:translate(100%,-50%);
+    -ms-transform:translate(100%,-50%);
+    -o-transform:translate(100%,-50%);
+    -webkit-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+    z-index:999;
+}
+
+.peeking-form-w:hover {
+    -webkit-transform:translate(98%,-50%);
+    -moz-transform:translate(98%,-50%);
+    -ms-transform:translate(98%,-50%);
+    -o-transform:translate(98%,-50%);
+}
+
+.peeking-form-w.active {
+    -webkit-transform:translate(0px,-50%);
+    -moz-transform:translate(0px,-50%);
+    -ms-transform:translate(0px,-50%);
+    -o-transform:translate(0px,-50%);
+}
+
+.peeking-form-w.active .pf-form {
+    box-shadow:0px 0px 70px rgba(0,0,0,0.3);
+}
+
+.peeking-form-w.active:hover { 
+    -webkit-transform:translate(0px,-50%);
+    -moz-transform:translate(0px,-50%);
+    -ms-transform:translate(0px,-50%);
+    -o-transform:translate(0px,-50%);
+}
+
+.peeking-form-w.active:hover .pf-form {
+    box-shadow:0px 0px 70px rgba(0,0,0,0.3);
+}
+
+.peeking-form-w .pf-trigger {
+    padding:15px 20px;
+    background-color:#c023db;
+    color:#fff;
+    font-size:1.2rem;
+    font-weight:700;
+    position:absolute;
+    -webkit-transform:rotate(-90deg) translate(-50%,-99%);
+    -moz-transform:rotate(-90deg) translate(-50%,-99%);
+    -ms-transform:rotate(-90deg) translate(-50%,-99%);
+    -o-transform:rotate(-90deg) translate(-50%,-99%);
+    top:50%;
+    transform-origin:0px 0px;
+    border-radius:4px 4px 0px 0px;
+    cursor:pointer;
+    -webkit-transition:all 0.2s ease;
+    transition:all 0.2s ease;
+}
+
+.peeking-form-w .pf-trigger:hover {
+    background-color:#c738df;
+}
+
+.peeking-form-w .pf-form {
+    padding:20px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color:#fff;
+    width:360px;
+    border-radius:4px 0px 0px 4px;
+    position:relative;
+}
+
+.peeking-form-w .pf-form .pf-close-trigger {
+    position:absolute;
+    top:10px;
+    right:15px;
+    font-size:20px;
+    color:rgba(0,0,0,0.4);
+    cursor:pointer;
+}
+
+.peeking-form-w .pf-form .pf-close-trigger:hover {
+    color:#000;
+}
+
+.peeking-form-w .pf-form h3,.peeking-form-w .pf-form h4,.peeking-form-w .pf-form h5 {
+    text-align:center;
+    margin-top:0px;
+}
+
+.peeking-form-w .pf-form form > h3 + p,.peeking-form-w .pf-form form > h4 + p,.peeking-form-w .pf-form form > h5 + p {
+    font-size:0.9rem;
+    color:rgba(0,0,0,0.7);
+    text-align:center;
+}
+
+.peeking-form-w .pf-form form > p {
+    text-align:center;
+    margin-bottom:0;
+}
+
+.peeking-form-w .pf-form form > p + div {
+    border-top:1px solid rgba(0,0,0,0.1);
+    /* padding-top:20px; */
+    /* margin-top:20px; */
+}
+
+.peeking-form-w .pf-form .os-btn {
+    font-size:1rem;
+    padding:8px 15px;
+    margin-top:0.6rem;
+}
+
+.peeking-form-w .pf-form div.wpcf7 .ajax-loader {
+    position:absolute;
+}
+
+.peeking-form-w div.wpcf7-validation-errors {
+    font-size:0.9rem;
+    padding:10px 15px !important;
+    text-align:center;
+    background-color:#ffcf56;
+    font-weight:700;
+    border-radius:4px;
+    margin:20px 0px 0px 0px !important;
+    border:none !important;
+}
+
+.peeking-form-w span.wpcf7-not-valid-tip {
+    font-size:0.9rem;
+    padding:5px;
+    background-color:#bb2323;
+    color:#fff;
+    font-weight:700;
+}
+
+.peeking-form-w div.wpcf7 form .wpcf7-form-control-wrap {
+    margin-bottom:0.6rem;
+}
+/* fin css */
+
+@media screen and (max-width: 500px){
+    .pf-form{
+        width: 80% !important;
+    }
+
+    .peeking-form-w.active:hover{
+        -webkit-transform: translate(20%,-50%);
+        -moz-transform: translate(20%,-50%);
+        -ms-transform: translate(20%,-50%);
+        -o-transform: translate(20%,-50%);
+    }
+}

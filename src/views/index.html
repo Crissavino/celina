@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <% include partials/head.html %>
+    <title><%= title %></title>
+</head>
+
+<body id="arriba">
+
+    <button class="flechaVolver scrolly" href="#arriba"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Header -->
+    <% include partials/header.html %>
+    
+    <!-- Programar llamada -->
+    <% include partials/programarLlamada.html %>
+
+    <!-- First -->
+    <% include partials/primeraSeccion.html %>
+
+    <!-- Second -->
+    <% include partials/segundaSeccion.html %>
+
+    <!-- Third -->
+    <% include partials/terceraSeccion.html %>
+
+    <!-- Fourth -->
+    <% include partials/cuartaSeccion.html %>
+
+    <!-- Footer -->
+    <% include partials/footer.html %>
+
+    <!-- Scripts -->
+    <% include partials/scripts.html %>
+    <script src="js/general.js"></script>
+</body>
+
+</html>
